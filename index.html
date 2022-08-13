@@ -6,8 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css" defer>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello</h1>
+    
+    <div class="image">
+        <div class="identity">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <h1>TechSavvLife</h1> 
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="formcontainer">
+            <h1>Sign up:</h1>
+            <form>
+                <ul class="formlist">
+                    <li>
+                        <label for="firstName">First name</label> <br>
+                        <input type="text" id="firstName" name="fName" content="Your name here" tabindex="1" required>
+                    </li>
+                    <li>
+                        <label for="email">Email </label> <br>
+                        <input type="email" id="email" name="email" content="Your email here" tabindex="4" required>
+                    </li>
+                    <li id="pass">
+                        <label for="passWord">Password </label> <br>
+                        <input type="password" id="passWord" name="pword" tabindex="6" minlength="5" required>
+                    </li>
+                    <li>
+                        <label for="lastName">Last Name</label> <br>
+                        <input type="text" id="lastName" name="lName" content="Your last name here" tabindex="3" required>
+                    </li>
+                    <li>
+                        <label for="pNum">Phone number</label> <br>
+                        <input type="tel" id="pNum" name="pNum" content="Your phone number here" tabindex="5">
+                    </li>
+                    <li id="pass">
+                        <label for="passWordcon">Confirm password</label> <br>
+                        <input type="password" id="passWordcon" name="powrdc" tabindex="7" minlength="5" required>
+                    </li>
+                    <button id="butt">Create account</button>
+
+                    <p id="invalid"></p>
+                </ul>
+                
+            </form>
+        </div>
+
+        
+    </div>
+    
 </body>
 </html>
